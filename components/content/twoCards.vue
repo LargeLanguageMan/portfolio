@@ -66,6 +66,7 @@ defineProps({
   text-align: center;
   max-width: 300px;
   transition: transform 0.3s;
+
   margin-bottom:35px;
 }
 .project-image {
@@ -81,7 +82,7 @@ p {
   margin: 10px;
   padding:15px;
   font-size: 1rem;
-  height: 200px;
+ height:200px; 
 }
  ButtonLink {
   margin-top: auto;
