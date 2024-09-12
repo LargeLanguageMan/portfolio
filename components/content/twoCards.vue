@@ -78,8 +78,15 @@ h3 {
   font-size: 1.5rem;
 }
 p {
-  margin: 10px 0;
+  margin: 10px;
   padding:15px;
   font-size: 1rem;
+  height: 200px;
 }
+ ButtonLink {
+  margin-top: auto;
+  padding: auto;
+  margin: 24px;
+  /* Pushes the button to the bottom of the card */
+} 
 </style>
