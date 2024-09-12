@@ -1,6 +1,6 @@
 ---
 navigation:
-title: 📝 Blog Posts
+title: 📝 Blog
 description: running and refining your own LLM's locally.
 ---
 # 📝 Blog Posts
