@@ -77,7 +77,10 @@ defineProps({
 h3 {
   margin-top: 10px;
   font-size: 1.5rem;
-  height:auto;
+  height:80px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 p {
   margin: 10px;
