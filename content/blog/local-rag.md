@@ -8,7 +8,7 @@ description: Leverage local RAG models to enhance AI while keeping your sensitiv
 
 ![RAG Flow](/rag.png)
 
-**GitHub Link**: [https://lnkd.in/gX2yY6XF](https://lnkd.in/gX2yY6XF)
+[GitHub Repo Link](https://github.com/LargeLanguageMan/local-rag)
 
 A Retrieval-Augmented Generation (RAG) model is a powerful process that combines a large language model with your own data. This could be anything from chat conversations, database tables, PDF documents, and more.
 

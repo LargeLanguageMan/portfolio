@@ -77,17 +77,13 @@ defineProps({
 h3 {
   margin-top: 10px;
   font-size: 1.5rem;
+  height:auto;
 }
 p {
   margin: 10px;
   padding:15px;
   font-size: 1rem;
- height:200px; 
+ height:300px; 
 }
- ButtonLink {
-  margin-top: auto;
-  padding: auto;
-  margin: 24px;
-  /* Pushes the button to the bottom of the card */
-} 
+ 
 </style>
