@@ -41,7 +41,6 @@ defineProps({
   padding: 15px;
   text-align: center;
   max-width: 300px;
-  transition: transform 0.3s;
 }
 .box:hover {
   transform: scale(1.05);
