@@ -9,6 +9,9 @@ In this project, I will show you how to download and install Ollama models, and 
 
 The main purpose of this project is to show examples of how streaming and non-streaming API requests work within the Ollama environment.
 
+If you just want to get some examples here is the
+[Github Repo Link](https://github.com/LargeLanguageMan/python-ollama-cli)
+
 Before we start, there are some requirements:
 
 # Step 1 - Pre-Requisites
