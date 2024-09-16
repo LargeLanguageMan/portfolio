@@ -48,4 +48,3 @@ The video below is Linux-based, but the installation differences for Mac and Win
 
 You could take this one step further and deploy a server that only you and your company have access to.
 
-
