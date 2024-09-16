@@ -1,7 +1,6 @@
 
 <template>
   <div class="project-card">
-    <img :src="imageSrc" alt="Project Cover Image" class="project-image" />
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
     <ButtonLink :href="href">Learn More</ButtonLink>
@@ -21,11 +20,7 @@ defineProps({
   href: {
     type: String,
     required: true
-  },
-  imageSrc: {
-    type: String,
-    default: 'cover.jpg' // Default cover image
-  }
+  } 
 });
 </script>
 <style scoped>
@@ -34,9 +29,10 @@ defineProps({
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  max-width: 300px;
   transition: transform 0.3s;
   margin-bottom:35px;
+  margin-top:35px;
+  width:auto;
 }
 .project-image {
   width: 100%;
@@ -48,7 +44,8 @@ h3 {
   font-size: 1.5rem;
 }
 p {
-  margin: 10px 0;
+  margin: 20px;
   font-size: 1rem;
+
 }
 </style>
