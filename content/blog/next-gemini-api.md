@@ -9,6 +9,8 @@ image: /gemini.png
 
 In this guide, I’ll walk you through setting up a Next.js application, creating a home page to interact with a custom persona, and integrating the Google Gemini API for dynamic responses.
 
+You can view a example working demo on my website [aiprojectlabs](https://sadbob.aiprojectlabs.com/)
+
 If you want to see how I set this up use my [GitHub repository](https://github.com/LargeLanguageMan/gemini-app-ai) as a guide. 
 
 
