@@ -106,7 +106,6 @@ declare global {
   }
 }
 
-declare const gtag: Function;
 
 export default function Home() {
   const [response, setResponse] = useState<string>('');
@@ -120,7 +119,6 @@ export default function Home() {
     });
 
     const data = await response.json();
-    gtag('event', 'user_ai_text', { 'input_text': input });
     return setResponse(data.text);
   }
 
