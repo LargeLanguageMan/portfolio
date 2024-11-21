@@ -2,7 +2,7 @@ export default defineAppConfig({
   // Configure Content Wind here
   cover: '/new.png',
   socials: {
-    twitter: 'biglanguagema',
+    twitter: 'biglanguageman',
     linkedin: 'wesley-hucker',
     github: 'LargeLanguageMan'
   }
