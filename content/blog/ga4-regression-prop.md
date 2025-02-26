@@ -33,14 +33,15 @@ GROUP BY
 This query creates a binary flag for each user, marking whether they've completed the conversion event (1) or not (0).
 
 ### 2. Create Demographics Table
-Next, we'll gather user demographic information:
+Demographic information can be antything that represents the user, from location, to phone OS, to browser, etc.
+Next, we'll gather user demographic information.:
 ```sql
 WITH first_values AS (
   SELECT
     user_pseudo_id,
-    geo.country as country,
+    geo.city as city,
     device.operating_system as operating_system,
-    device.language as language,
+    device.browser as browser,
     ROW_NUMBER() OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp DESC) AS row_num
   FROM `your-project.analytics_XXXXX.events_*`
   WHERE event_name = "user_engagement"
