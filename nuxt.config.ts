@@ -7,9 +7,20 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-09-10',
   modules: ['@nuxt/image', 'nuxt-gtag'],
-  gtag:{
-    id:'G-29H3KSNVGS'
+  gtag: {
+    id: 'G-29H3KSNVGS'
   },
   components: true,  // Enables auto-importing of components
 
+  mdc: {
+    highlight: {
+      langs: [
+        'javascript',
+        'typescript',
+        'python',
+        'bash',
+        'sql',  // Add SQL language support
+      ],
+    },
+  },
 })
