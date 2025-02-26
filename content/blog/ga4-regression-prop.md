@@ -27,6 +27,10 @@ SELECT
   MAX(CASE WHEN event_name = 'target_conversion_event' THEN 1 ELSE 0 END) AS conversion_flag
 FROM
   `your-project.analytics_XXXXX.events_*`
+
+WHERE
+    _TABLE_SUFFIX BETWEEN 'DATE-START'
+    AND 'DATE-END' #format is YYYYMMDD
 GROUP BY
   user_pseudo_id
 ```
@@ -45,6 +49,9 @@ WITH first_values AS (
     ROW_NUMBER() OVER (PARTITION BY user_pseudo_id ORDER BY event_timestamp DESC) AS row_num
   FROM `your-project.analytics_XXXXX.events_*`
   WHERE event_name = "user_engagement"
+
+    AND _TABLE_SUFFIX BETWEEN 'DATE-START'
+    AND 'DATE-END' #format is YYYYMMDD
 )
 SELECT * EXCEPT (row_num)
 FROM first_values
@@ -62,6 +69,9 @@ SELECT
   SUM(IF(event_name = 'event_type_3', 1, 0)) AS cnt_event_3
 FROM
   `your-project.analytics_XXXXX.events_*`
+WHERE
+    _TABLE_SUFFIX BETWEEN 'DATE-START'
+    AND 'DATE-END' #format is YYYYMMDD
 GROUP BY
   user_pseudo_id
 ```
