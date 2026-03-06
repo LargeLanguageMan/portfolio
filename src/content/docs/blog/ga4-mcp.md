@@ -1,9 +1,10 @@
 ---
 title: "Building a GA4 MCP Server and Using It Across Codex, Claude, Gemini, and OpenClaw"
 description: "Learn how to build a Google Analytics 4 MCP server and connect it to multiple AI agents — Claude, Codex, Gemini CLI, and OpenClaw — giving every model direct, real-time access to your GA4 data."
+date: 2025-03-06
+authors:
+  - wes
 ---
-
-# Building a GA4 MCP Server and Using It Across Codex, Claude, Gemini, and OpenClaw
 
 One of the most powerful things you can do with modern AI agents is give them direct access to real data. Instead of hallucinating analytics insights, the model can actually query your Google Analytics 4 property in real time.
 
@@ -268,8 +269,6 @@ systemctl --user restart openclaw-gateway
 openclaw skills list
 ```
 
-You should see `📈 ga4-mcp` in the output.
-
 ---
 
 ## The Final Architecture
@@ -304,18 +303,12 @@ Using MCP gives you:
 - **Structured tool calls** — models get typed responses, not raw text
 - **A single source of truth** — all agents query the same live data
 
-Instead of building a separate analytics integration for every model you use, you build one MCP server and connect everything to it.
-
 ---
 
 ## 5 Real Analytics Prompts You Can Now Run
-
-Once your GA4 MCP is connected, try these across any of the agents above:
 
 1. **Funnel analysis** — "Show me the drop-off rate at each step of my checkout funnel for the last 14 days"
 2. **Channel attribution** — "Which acquisition channels drove the most conversions last month?"
 3. **Content performance** — "List my top 10 pages by engagement rate and average session duration"
 4. **Anomaly detection** — "Were there any unusual spikes or drops in sessions this week compared to last week?"
 5. **Cohort insight** — "How does retention differ between users who arrived via organic search vs paid?"
-
-These are the kinds of questions that used to require a dedicated analyst or a BI tool. With GA4 MCP, any model answers them instantly with real data.

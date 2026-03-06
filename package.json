@@ -1,26 +1,15 @@
 {
-  "name": "content-wind-template",
-  "private": true,
+  "name": "portfolio",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview"
-  },
-  "devDependencies": {
-    "@nuxt/image": "^1.8.0",
-    "better-sqlite3": "^12.5.0",
-    "content-wind": "^1.1.2",
-    "ipx": "^3.1.1",
-    "nuxt": "^3.20.2",
-    "nuxt-gtag": "^3.0.1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "dependencies": {
-    "@coreui/coreui": "^5.1.2",
-    "@coreui/vue": "^5.3.0",
-    "@vercel/speed-insights": "^1.0.12"
-  },
-  "overrides": {
-    "@nuxtjs/mdc": "^0.19.1"
+    "@astrojs/starlight": "^0.33.0",
+    "astro": "^5.7.0",
+    "starlight-blog": "^0.25.3"
   }
 }
