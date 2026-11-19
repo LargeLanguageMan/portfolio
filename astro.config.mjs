@@ -18,6 +18,10 @@ export default defineConfig({
           },
         }),
       ],
+      // Keep the pre-0.34 layout: no permalink icons beside headings.
+      markdown: {
+        headingLinks: false,
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/LargeLanguageMan' },
       ],
